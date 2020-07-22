@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <title>Ecommerce</title>
+</head>
+<body>
+  <header>
+    <div class="top-header">
+      <div class="logo"> <span>DAWS</span></div>
+      
+      <div class="nav-bar">
+        
+        <ul>
+          <div class="menu-toggler">
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-times"></i>
+        </div>
+          <li class="toremove"><a href="#home">Home</a></li>
+          <li class="toremove"><a href="#about">About</a></li>
+          <li class="toremove"><a href="#services">Services</a></li>
+          <li class="toremove"><a href="#contact">Contact</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#signup">Signup</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>The Daws Fashion Branding</h2>
+      <h1>Fashion hrs</h1>
+      <button class="btn"><a href="#">Shop Now</a></button>
+      <button class="btn"><a href="#">Trending</a></button>
+    </div>
+  </header>
+
+  <script type="text/javascript">
+    const selectElement = function (element) {
+  return document.querySelector(element);
+};
+
+let menuToggler = selectElement('.menu-toggler');
+let body = selectElement('body');
+
+menuToggler.addEventListener('click', function() {
+  body.classList.toggle('open');
+
+});
+  </script>
+ </body>
+</html>
